@@ -13,4 +13,5 @@ let baseUrl = "https://api.stackexchange.com/2.2"
 let answersUrl = "/answers?order=desc&sort=activity&site=stackoverflow"
 let title = "StackOver Flow"
 let customTableviewCell = "CustomTableviewCell"
-
+let pullToRefresh = "Pull to refresh"
+let fetching = "Fetching..."

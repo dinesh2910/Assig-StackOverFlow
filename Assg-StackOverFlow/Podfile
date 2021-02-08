@@ -7,5 +7,7 @@ target 'Assg-StackOverFlow' do
 
   # Pods for Assg-StackOverFlow
 	pod 'SDWebImage'
+	pod 'MBProgressHUD'
+        
 
 end

@@ -12,33 +12,54 @@ import SDWebImage
 class StackOverListViewController: UIViewController {
         
     @IBOutlet var stackOverTV: UITableView!
+    @IBOutlet var noRecordsView: UIView!
+    
     var answersViewModel = AnswersViewModel()
+    var refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         stackOverTV.allowsSelection = false
         self.title = title
         stackOverTV.register(UINib(nibName: customTableviewCell, bundle: nil), forCellReuseIdentifier: reusableCell)
-
         stackOverTV.isHidden = true
         stackOverTV.delegate = self
         stackOverTV.dataSource = self
+        addRefreshControl()
         fetchAnswers()
     }
 
-   internal func fetchAnswers() {
+    @objc internal func fetchAnswers() {
+    self.showHUD(progressLabel: fetching)
         answersViewModel.fetchAnswers{ [weak self] answers in
             DispatchQueue.main.async {
+                self?.dismissHUD(isAnimated: true)
                 self?.updateUI()
+                self?.refreshControl.endRefreshing()
             }
         }
     }
     
    internal func updateUI() {
         if (answersViewModel.answers?.items.count) != nil{
-            self.stackOverTV.isHidden = false;
+            self.stackOverTV.isHidden = false
+            self.noRecordsView.isHidden = true
             stackOverTV.reloadData()
+        } else {
+            self.stackOverTV.isHidden = true
+            self.noRecordsView.isHidden = false
         }
+    }
+    
+    internal func addRefreshControl(){
+        refreshControl.attributedTitle = NSAttributedString(string: pullToRefresh)
+        refreshControl.addTarget(self, action: #selector(self.fetchAnswers), for: .valueChanged)
+        self.stackOverTV.addSubview(refreshControl)
+
+    }
+    
+    @IBAction func didTapOnRetry(_ sender: UIButton) {
+        fetchAnswers()
     }
 }
 

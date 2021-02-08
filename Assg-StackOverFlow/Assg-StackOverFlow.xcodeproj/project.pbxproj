@@ -12,6 +12,7 @@
 		B687316025D17F55001B0008 /* AnswersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687315F25D17F55001B0008 /* AnswersViewModel.swift */; };
 		B687316525D18AEA001B0008 /* CustomTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687316325D18AEA001B0008 /* CustomTableviewCell.swift */; };
 		B687316625D18AEA001B0008 /* CustomTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B687316425D18AEA001B0008 /* CustomTableviewCell.xib */; };
+		B687316C25D1AE5B001B0008 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687316B25D1AE5B001B0008 /* UIViewController+Extension.swift */; };
 		B6B12ABB25CF4C66002C9968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B12ABA25CF4C66002C9968 /* AppDelegate.swift */; };
 		B6B12ABD25CF4C66002C9968 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B12ABC25CF4C66002C9968 /* SceneDelegate.swift */; };
 		B6B12AC225CF4C66002C9968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B12AC025CF4C66002C9968 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		B687315F25D17F55001B0008 /* AnswersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersViewModel.swift; sourceTree = "<group>"; };
 		B687316325D18AEA001B0008 /* CustomTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableviewCell.swift; sourceTree = "<group>"; };
 		B687316425D18AEA001B0008 /* CustomTableviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableviewCell.xib; sourceTree = "<group>"; };
+		B687316B25D1AE5B001B0008 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		B6B12AB725CF4C66002C9968 /* Assg-StackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assg-StackOverFlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B12ABA25CF4C66002C9968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B12ABC25CF4C66002C9968 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B6B12AD825CF524A002C9968 /* Constant.swift */,
+				B687316B25D1AE5B001B0008 /* UIViewController+Extension.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B687316C25D1AE5B001B0008 /* UIViewController+Extension.swift in Sources */,
 				B687316025D17F55001B0008 /* AnswersViewModel.swift in Sources */,
 				B687315E25D17F05001B0008 /* DataModel.swift in Sources */,
 				B687316525D18AEA001B0008 /* CustomTableviewCell.swift in Sources */,
