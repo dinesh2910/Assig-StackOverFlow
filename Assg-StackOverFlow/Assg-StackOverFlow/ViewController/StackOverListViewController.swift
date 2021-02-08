@@ -7,43 +7,37 @@
 //
 
 import UIKit
+import SDWebImage
 
 class StackOverListViewController: UIViewController {
-    
+        
+    @IBOutlet var stackOverTV: UITableView!
     var answersViewModel = AnswersViewModel()
-    
-    private let tableView: UITableView = {
-        let stackOverTV = UITableView()
-        stackOverTV.allowsSelection = false
-        stackOverTV.isHidden = true
-        stackOverTV.register(UITableViewCell.self, forCellReuseIdentifier: reusableCell)
-        return stackOverTV
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        view.addSubview(tableView)
+        stackOverTV.allowsSelection = false
+        self.title = title
+        stackOverTV.register(UINib(nibName: customTableviewCell, bundle: nil), forCellReuseIdentifier: reusableCell)
+
+        stackOverTV.isHidden = true
+        stackOverTV.delegate = self
+        stackOverTV.dataSource = self
         fetchAnswers()
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
-    }
-    
-    func fetchAnswers() {
+
+   internal func fetchAnswers() {
         answersViewModel.fetchAnswers{ [weak self] answers in
             DispatchQueue.main.async {
                 self?.updateUI()
             }
         }
     }
-    func updateUI() {
+    
+   internal func updateUI() {
         if (answersViewModel.answers?.items.count) != nil{
-            self.tableView.isHidden = false;
-            tableView.reloadData()
+            self.stackOverTV.isHidden = false;
+            stackOverTV.reloadData()
         }
     }
 }
@@ -59,11 +53,16 @@ extension StackOverListViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: reusableCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reusableCell, for: indexPath) as? CustomTableviewCell
         let cellData = answersViewModel.answers?.items[indexPath.row]
-        cell.textLabel?.text = cellData?.owner.displayName
-        
-        return cell
+        cell?.displayName?.text = cellData?.owner.displayName
+        cell?.acceptanceRate?.text = "\(cellData?.owner.acceptRate ?? 0)"
+        cell?.profileImage.sd_setImage(with: URL(string: ((cellData?.owner.profileImage)!)), placeholderImage: UIImage(named: "placeholder.png"))
+        cell?.profileImage.layer.borderWidth = 1.0
+        cell?.profileImage.layer.masksToBounds = false
+        cell?.profileImage.layer.borderColor = UIColor.white.cgColor
+        cell?.profileImage.layer.cornerRadius = (cell?.profileImage.frame.size.width)! / 2
+        cell?.profileImage.clipsToBounds = true
+        return cell!
     }
 }
