@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -60,7 +60,6 @@
 				EE8E63A404C63ADE9954234E /* Pods-Assg-StackOverFlow.debug.xcconfig */,
 				448EA61AE21830932C1FB28E /* Pods-Assg-StackOverFlow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,11 +109,11 @@
 		B6B12AB925CF4C66002C9968 /* Assg-StackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
-				B687316225D18AB3001B0008 /* Views */,
 				B6B12AD225CF5031002C9968 /* Delegates */,
 				B6B12AD025CF4E04002C9968 /* ViewController */,
 				B687315925D17E4C001B0008 /* ViewModel */,
 				B687315A25D17E6A001B0008 /* Services */,
+				B687316225D18AB3001B0008 /* Views */,
 				B6B12ACE25CF4DF1002C9968 /* Model */,
 				B6B12AD525CF521F002C9968 /* Others */,
 				B6B12AC325CF4C67002C9968 /* Assets.xcassets */,
