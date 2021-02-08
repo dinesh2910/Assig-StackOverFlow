@@ -9,7 +9,8 @@
 import Foundation
 
 let reusableCell = "stackOverTVCell"
-let baseUrl : String = "https://api.stackexchange.com/2.2"
-let answersUrl : String = "/answers?order=desc&sort=activity&site=stackoverflow"
-
+let baseUrl = "https://api.stackexchange.com/2.2"
+let answersUrl = "/answers?order=desc&sort=activity&site=stackoverflow"
+let title = "StackOver Flow"
+let customTableviewCell = "CustomTableviewCell"
 

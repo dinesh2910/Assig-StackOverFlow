@@ -10,6 +10,8 @@
 		B687315C25D17EE1001B0008 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687315B25D17EE1001B0008 /* HTTPManager.swift */; };
 		B687315E25D17F05001B0008 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687315D25D17F05001B0008 /* DataModel.swift */; };
 		B687316025D17F55001B0008 /* AnswersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687315F25D17F55001B0008 /* AnswersViewModel.swift */; };
+		B687316525D18AEA001B0008 /* CustomTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687316325D18AEA001B0008 /* CustomTableviewCell.swift */; };
+		B687316625D18AEA001B0008 /* CustomTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B687316425D18AEA001B0008 /* CustomTableviewCell.xib */; };
 		B6B12ABB25CF4C66002C9968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B12ABA25CF4C66002C9968 /* AppDelegate.swift */; };
 		B6B12ABD25CF4C66002C9968 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B12ABC25CF4C66002C9968 /* SceneDelegate.swift */; };
 		B6B12AC225CF4C66002C9968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B12AC025CF4C66002C9968 /* Main.storyboard */; };
@@ -17,12 +19,17 @@
 		B6B12AC725CF4C67002C9968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B12AC525CF4C67002C9968 /* LaunchScreen.storyboard */; };
 		B6B12AD425CF5181002C9968 /* StackOverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B12AD325CF5181002C9968 /* StackOverListViewController.swift */; };
 		B6B12AD925CF524A002C9968 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B12AD825CF524A002C9968 /* Constant.swift */; };
+		EA9A75CEF1191B165B01AB56 /* Pods_Assg_StackOverFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F3C21BC18F56A1B6FBC2A7 /* Pods_Assg_StackOverFlow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448EA61AE21830932C1FB28E /* Pods-Assg-StackOverFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assg-StackOverFlow.release.xcconfig"; path = "Target Support Files/Pods-Assg-StackOverFlow/Pods-Assg-StackOverFlow.release.xcconfig"; sourceTree = "<group>"; };
+		58F3C21BC18F56A1B6FBC2A7 /* Pods_Assg_StackOverFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assg_StackOverFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B687315B25D17EE1001B0008 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		B687315D25D17F05001B0008 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = ../ViewModel/DataModel.swift; sourceTree = "<group>"; };
 		B687315F25D17F55001B0008 /* AnswersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersViewModel.swift; sourceTree = "<group>"; };
+		B687316325D18AEA001B0008 /* CustomTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableviewCell.swift; sourceTree = "<group>"; };
+		B687316425D18AEA001B0008 /* CustomTableviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableviewCell.xib; sourceTree = "<group>"; };
 		B6B12AB725CF4C66002C9968 /* Assg-StackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assg-StackOverFlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B12ABA25CF4C66002C9968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B12ABC25CF4C66002C9968 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		B6B12AC825CF4C67002C9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B12AD325CF5181002C9968 /* StackOverListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverListViewController.swift; sourceTree = "<group>"; };
 		B6B12AD825CF524A002C9968 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EE8E63A404C63ADE9954234E /* Pods-Assg-StackOverFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assg-StackOverFlow.debug.xcconfig"; path = "Target Support Files/Pods-Assg-StackOverFlow/Pods-Assg-StackOverFlow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +47,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9A75CEF1191B165B01AB56 /* Pods_Assg_StackOverFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12D7CA5A23303DA5232C6699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E63A404C63ADE9954234E /* Pods-Assg-StackOverFlow.debug.xcconfig */,
+				448EA61AE21830932C1FB28E /* Pods-Assg-StackOverFlow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B687315925D17E4C001B0008 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +80,22 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B687316225D18AB3001B0008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B687316325D18AEA001B0008 /* CustomTableviewCell.swift */,
+				B687316425D18AEA001B0008 /* CustomTableviewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B6B12AAE25CF4C66002C9968 = {
 			isa = PBXGroup;
 			children = (
 				B6B12AB925CF4C66002C9968 /* Assg-StackOverFlow */,
 				B6B12AB825CF4C66002C9968 /* Products */,
+				12D7CA5A23303DA5232C6699 /* Pods */,
+				FF36B8A8E371EBF5AB206154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +110,7 @@
 		B6B12AB925CF4C66002C9968 /* Assg-StackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
+				B687316225D18AB3001B0008 /* Views */,
 				B6B12AD225CF5031002C9968 /* Delegates */,
 				B6B12AD025CF4E04002C9968 /* ViewController */,
 				B687315925D17E4C001B0008 /* ViewModel */,
@@ -127,6 +158,14 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		FF36B8A8E371EBF5AB206154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58F3C21BC18F56A1B6FBC2A7 /* Pods_Assg_StackOverFlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6B12ACB25CF4C67002C9968 /* Build configuration list for PBXNativeTarget "Assg-StackOverFlow" */;
 			buildPhases = (
+				5941CF88860E88E8F0DFEB2A /* [CP] Check Pods Manifest.lock */,
 				B6B12AB325CF4C66002C9968 /* Sources */,
 				B6B12AB425CF4C66002C9968 /* Frameworks */,
 				B6B12AB525CF4C66002C9968 /* Resources */,
+				0EF33C3E2B325D3878FDA7D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,11 +228,54 @@
 			files = (
 				B6B12AC725CF4C67002C9968 /* LaunchScreen.storyboard in Resources */,
 				B6B12AC425CF4C67002C9968 /* Assets.xcassets in Resources */,
+				B687316625D18AEA001B0008 /* CustomTableviewCell.xib in Resources */,
 				B6B12AC225CF4C66002C9968 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF33C3E2B325D3878FDA7D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Assg-StackOverFlow/Pods-Assg-StackOverFlow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Assg-StackOverFlow/Pods-Assg-StackOverFlow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Assg-StackOverFlow/Pods-Assg-StackOverFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5941CF88860E88E8F0DFEB2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Assg-StackOverFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6B12AB325CF4C66002C9968 /* Sources */ = {
@@ -200,6 +284,7 @@
 			files = (
 				B687316025D17F55001B0008 /* AnswersViewModel.swift in Sources */,
 				B687315E25D17F05001B0008 /* DataModel.swift in Sources */,
+				B687316525D18AEA001B0008 /* CustomTableviewCell.swift in Sources */,
 				B687315C25D17EE1001B0008 /* HTTPManager.swift in Sources */,
 				B6B12ABB25CF4C66002C9968 /* AppDelegate.swift in Sources */,
 				B6B12ABD25CF4C66002C9968 /* SceneDelegate.swift in Sources */,
@@ -346,6 +431,7 @@
 		};
 		B6B12ACC25CF4C67002C9968 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8E63A404C63ADE9954234E /* Pods-Assg-StackOverFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -364,6 +450,7 @@
 		};
 		B6B12ACD25CF4C67002C9968 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448EA61AE21830932C1FB28E /* Pods-Assg-StackOverFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
